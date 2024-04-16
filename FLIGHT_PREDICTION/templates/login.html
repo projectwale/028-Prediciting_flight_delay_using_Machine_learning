@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Css Stylesheet -->
+  <link rel="stylesheet" href="../static/css/style.css" />
+
+  <link rel="stylesheet" href="../static/css/login.css" />
+
+  <link rel="stylesheet" media=" screen and (max-width:768px)" href="../static/css/mobile.css" />
+  <!-- unicons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+  <!-- favicon -->
+  <link rel="icon" href="../static/Imgs/icons/Vector.png" />
+
+  <!-- script tag -->
+  <script defer src="../static/JS/script.js"></script>
+
+  <!-- ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- swiper js -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- Title -->
+  <title>flight delay prediction </title>
+</head>
+
+<body>
+  <!-- Showcase -->
+  <main class="main" id="home">
+    <!-- Header -->
+    <header class="header">
+      <!-- logo -->
+      <div class="logo">
+        <img src="../static/imgs/Logo/sd.jpg" alt="2rism" />
+      </div>
+
+      <!-- navbar -->
+      <nav class="navbar">
+        <ul class="navlists">
+          <li class="navlist"><a href="#"></a></li>
+          <li class="navlist"><a href="#"></a></li>
+          <li class="navlist"><a href="/">Home</a></li>
+          <li class="navlist"><a href="/about">About</a></li>
+          <li class="navlist"><a href="/login">Login</a></li>
+          <li class="navlist"><a href="/register">Register</a></li>
+
+        </ul>
+      </nav>
+
+    </header>
+
+    <!-- showcase-content -->
+    <div id="login-box">
+
+      <form  action="/login" method="POST">
+        <div class="left">
+          <h1>Sign In</h1>
+
+          <input type="text" name="email" placeholder="E-mail" />
+          <input type="password" name="password" placeholder="Password" />
+
+          <input type="submit" name="signup_submit" value="Sign me up" />
+        </div>
+      </form>
+
+
+      <div class="right">
+        <span class="loginwith">Sign in with<br />social network</span>
+
+        <button class="social-signin facebook">Log in with facebook</button>
+        <button class="social-signin twitter">Log in with Twitter</button>
+        <button class="social-signin google">Log in with Google+</button>
+      </div>
+      <div class="or">OR</div>
+    </div>
+
+  </main>
+
+  <script>
+    window.onload = function () {
+        var message = "{{ FinalMsg }}";
+        if (message) {
+            alert(message);
+        }
+    }
+</script>
+
+
+
+  <div class="toggleOn"><i class="uil uil-align-center-alt"></i></div>
+  <div class="toggleClose"><i class="uil uil-multiply"></i></div>
+</body>
+
+</html>
